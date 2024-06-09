@@ -1,0 +1,265 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{font_name}}:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family={{sub_font_name}}:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  	margin-left: 30px !important;
+  	animation: {{animateIn}} 1.5s ease;
+}
+
+.goalEnd::before {
+  content: "{curr}";
+}
+
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {stroke-width: 0px;}
+
+.cls-1, .cls-8 {
+  fill: #b6b7fa;
+}
+
+.cls-1, .cls-10 {
+  fill-rule: evenodd;
+}
+
+.cls-2 {
+  fill: url(#linear-gradient);
+}
+
+.cls-3 {
+  fill: none;
+}
+
+.cls-4 {
+  fill: #17171e;
+}
+
+.cls-5, .cls-10 {
+  fill: #b6b7fa;
+}
+
+.cls-11 {
+  opacity: .06;
+}
+
+.cls-12 {
+  font-size: 40.08px;
+  letter-spacing: .06em;
+}
+
+.cls-12, .cls-7 {
+  fill: #fff;
+}
+
+.cls-13 {
+  clip-path: url(#clippath);
+}
+
+.cls-14 {
+  opacity: 1;
+}
+
+#mainWidget {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#mainWidget {
+	animation: floatFull 6s ease-in-out infinite;
+}
+
+#labelClass {
+	animation: float 6s ease-in-out infinite;
+}
+
+#real-time {
+    display: flex;
+    align-items: center; /* Align items vertically center if needed */
+  	justify-content: space-between;
+    transform: translateY(196px);
+    padding-left: 70px;
+ 	padding-right: 390px;
+  	font-family: '{sub_font_name}';
+    font-weight: {sub_font_weight} !important;
+}
+
+#goalTotal {
+  	transform: translateX(0);
+}
+
+#fill {
+	transition: 2s width;
+  	animation: glow 3s infinite alternate;
+}
+
+#label {
+	fill: {label_color};
+}
+
+#goal-icon {
+	fill: {icon_color};
+}
+
+#main-bg {
+  	fill: url(#MainGradient);
+	opacity: {bg_opacity}%; !important
+}
+
+#chat-icon {
+	fill: {flower_icon_bg};
+}
+
+#left-leaf path {
+	fill: {left_leaf_color};
+	opacity: {toggleLeaf};
+}
+
+#right-leaf path {
+	fill: {right_leaf_color};
+	opacity: {toggleLeaf};
+}
+
+#left-leaf, #right-leaf {
+	animation: glow 3s infinite alternate;	
+}
+
+#flower-icon {
+	fill: {flower_icon};
+}
+
+#flower-icon{
+	animation: floatX 6s ease-in-out infinite;
+  	animation-delay: 0.1s;
+}
+
+#chat-icon{
+	animation: floatX 6s ease-in-out infinite;
+}
+
+.progress-background {
+	fill: {progress_background};
+}
+
+.cls-9 {
+	fill: {pattern_color}; /* Bottom right pattern */
+}
+
+text.widgetTitle, p {
+  	font-weight: {font_weight} !important;
+  	font-size: {font_size}px;
+  	font-style: normal;
+  	letter-spacing: {title_spacing}em;
+    fill: {text_color};
+    font-family: '{font_name}';
+  	text-transform: {font_case};
+    transform: translateY(150px);
+    -webkit-font-smoothing: antialiased;
+  	margin-left: 200px;
+}
+
+text::after {
+	content: 'hello';
+}
+
+span, #goal-count {
+  	font-size: {sub_font_size}px;
+    letter-spacing: .06em;
+  	color: {number_color};
+}
+
+tspan.title_dots {
+  	opacity: {toggleDots};
+}
+
+.goal-animation {
+  animation: {{goal_animation}} 0.5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+@keyframes floatFull {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+      transform: translatey({hover_effect}px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-15px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes floatX {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(15px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes floatReverse {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(-5px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes glow {
+      0% {
+        filter: drop-shadow(0 0 0px transparent); /* No glow (transparent) */
+      }
+      100% {
+        filter: drop-shadow(0 0 {toggleGlow} {glow_color}); /* Max glow) */
+      }
+    }
+
+@keyframes goalReachedAnim {
+  0% {
+    transform:translateY(0px);
+  }
+  50% {
+    transform:translateY(-5px);
+  }
+  100% {
+    transform:translateY(0px);
+  }
+}
+
+@keyframes scaleAnim {
+  0% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(0.7);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
