@@ -1,0 +1,354 @@
+{ 
+  "data_duration": {
+    "group": "Settings ⚙️",
+    "label": "Goal Time Period",
+    "value": "total",
+    "type": "dropdown",
+    "options": {
+      "total": "Total",
+      "month": "Month",
+      "week": "Week",
+      "session": "Session"
+    }
+  },
+  
+   "widget_title": {
+    "group": "Settings ⚙️",
+    "type": "text",
+    "label": "Widget Title",
+    "value": "your title here"
+  },
+
+  "goal_total": {
+    "group": "Settings ⚙️",
+    "type": "number",
+    "label": "Goal Amount",
+    "value": 100
+  },
+  
+  "goalType": {
+    "group": "Settings ⚙️",
+    "type": "dropdown",
+    "label": "Goal Type",
+    "value": "follower",
+    "options": {
+      "follower": "Followers goal",
+      "subscriber": "Sub goal",
+      "donation": "Donation goal",
+      "bit": "Bits goal"
+      }
+    },
+  
+  "curr": {
+    "group": "Settings ⚙️",
+    "type": "dropdown",
+    "label": "Currency Symbol",
+    "value": "",
+    "options": {
+      "": "None",
+	  " $": "$ - Dollar",
+      "€": "€ - Euro",
+      "¥": "¥ - Yen",
+      "£": "£ - Pound"
+      }
+    },  
+  
+  "goal_Type": {
+    "group": "Settings ⚙️",
+    "type": "dropdown",
+    "label": "Icon Type",
+    "value": "M678.15,110.5c-.28.18-.64.18-.92,0-2.17-1.37-11.28-7.45-11.28-13.18,0-7.4,9.21-8.59,11.74-3.6,2.53-4.99,11.74-3.8,11.74,3.6,0,5.74-9.11,11.82-11.28,13.18h0Z",
+    "options": {
+      "M678.15,110.5c-.28.18-.64.18-.92,0-2.17-1.37-11.28-7.45-11.28-13.18,0-7.4,9.21-8.59,11.74-3.6,2.53-4.99,11.74-3.8,11.74,3.6,0,5.74-9.11,11.82-11.28,13.18h0Z": "Heart",
+      "M673.59,89.43c1.58-2.84,2.37-4.26,3.56-4.26s1.98,1.42,3.56,4.26l.41.73c.45.81.67,1.21,1.03,1.48.35.27.79.37,1.66.56l.8.18c3.07.7,4.61,1.04,4.98,2.22.37,1.18-.68,2.4-2.78,4.85l-.54.63c-.6.7-.89,1.04-1.03,1.48-.13.43-.09.9,0,1.82l.08.85c.32,3.27.48,4.91-.48,5.63-.96.73-2.4.06-5.28-1.26l-.74-.34c-.82-.38-1.23-.57-1.66-.57s-.84.19-1.66.57l-.74.34c-2.88,1.33-4.32,1.99-5.28,1.26-.96-.73-.8-2.36-.48-5.63l.08-.85c.09-.93.14-1.39,0-1.82-.13-.43-.43-.78-1.03-1.48l-.54-.63c-2.1-2.45-3.14-3.68-2.78-4.85.37-1.18,1.9-1.52,4.98-2.22l.8-.18c.87-.2,1.31-.3,1.66-.56.35-.27.58-.67,1.03-1.48l.41-.73Z": "Star",
+      "M690.49,97.42l-3.99-1.14c-3.66-1.03-6.51-3.89-7.54-7.54l-1.14-3.99c-.16-.39-.6-.57-.99-.42-.19.08-.34.23-.42.42l-1.14,3.99c-1.03,3.66-3.89,6.51-7.54,7.54l-3.99,1.14c-.39.11-.61.52-.5.9.07.24.26.44.5.5l3.99,1.14c3.66,1.03,6.51,3.89,7.54,7.54l1.14,3.99c.11.39.52.61.9.5.24-.07.44-.26.5-.5l1.14-3.99c1.03-3.66,3.89-6.51,7.54-7.54l3.99-1.14c.39-.11.61-.52.5-.9-.07-.24-.26-.44-.5-.5h0Z": "Sparkle",
+      "M675.25,112.12v-1.3c-2.01-.38-3.47-1.21-4.35-1.92-1.92-1.63-2.26-2.72-2.26-3.3,0-1.17,1-2.09,2.09-2.09.84,0,1.42.5,1.84,1.13.67,1,1.63,1.59,2.68,1.92v-6.36c-4.48-1.3-6.61-3.26-6.61-6.65s2.55-6.19,6.61-6.94v-1.26c0-1.17.92-2.09,2.09-2.09s2.09.92,2.09,2.09v1.26c4.64.75,6.4,4.02,6.57,4.35.13.21.21.54.21.92,0,1.25-1.09,2.09-1.97,2.09-1,0-1.38-.33-1.97-1.13-.59-.79-1.46-1.59-2.84-1.97v6.02c4.98,1.38,6.78,3.43,6.78,7.03,0,3.81-2.38,6.4-6.78,6.98v1.21c0,1.17-.92,2.09-2.09,2.09s-2.09-.92-2.09-2.09ZM675.25,95.77v-4.81c-1.46.46-2.43,1.38-2.43,2.59,0,.96.79,1.67,2.43,2.22ZM679.43,101.29v5.4c1.55-.29,2.59-1.05,2.59-2.76,0-1.25-.59-1.97-2.59-2.64Z": "Money",
+      "M690.2,96.53c0-3.09-2.5-5.59-5.59-5.59-.59,0-1.15.12-1.68.28-.01-3.08-2.51-5.57-5.59-5.57s-5.57,2.49-5.59,5.57c-.53-.17-1.09-.28-1.68-.28-3.09,0-5.59,2.5-5.59,5.59,0,2.47,1.62,4.54,3.84,5.28-.67.92-1.07,2.04-1.07,3.26,0,3.09,2.5,5.59,5.59,5.59,1.85,0,3.48-.91,4.49-2.29,1.02,1.39,2.64,2.29,4.49,2.29,3.09,0,5.59-2.5,5.59-5.59,0-1.22-.4-2.34-1.07-3.26,2.23-.74,3.84-2.81,3.84-5.28ZM677.34,102.25c-1.61,0-2.91-1.3-2.91-2.91s1.3-2.91,2.91-2.91,2.91,1.3,2.91,2.91c0,1.61-1.3,2.91-2.91,2.91Z": "Flower",
+      "M677.72,87.62c.27-.4.29-.92.05-1.34-.24-.42-.71-.66-1.19-.62-6.42.54-11.45,5.92-11.45,12.48,0,6.91,5.61,12.52,12.52,12.52,6.56,0,11.93-5.04,12.48-11.45.04-.48-.2-.95-.62-1.19-.42-.24-.94-.22-1.34.05-1.21.83-2.67,1.32-4.26,1.32-4.15,0-7.51-3.36-7.51-7.51,0-1.58.49-3.05,1.32-4.26Z": "Moon"
+    }
+  },
+
+  "font_name": {
+    "group": "Typography ⌨️",
+    "type": "googleFont",
+    "label": "Select a Font",
+    "value": "Quicksand"
+  },
+  
+  "font_size": {
+    "group": "Typography ⌨️",
+    "type": "number",
+    "label": "Title Font Size",
+    "value": 28,
+    "min": 20,
+    "max": 60,
+    "step": 1
+  },
+  
+  "font_weight": {
+    "group": "Typography ⌨️",
+    "label": "Title Font Weight",
+    "value": "700",
+    "type": "dropdown",
+    "options": {
+      "300": "Thin",
+      "400": "Regular",
+      "500": "Medium",
+      "600": "Semibold",
+      "700": "Bold"
+    }
+  },
+  
+  "title_spacing": {
+    "group": "Typography ⌨️",
+    "type": "number",
+    "label": "Title Letter Spacing",
+    "value": 0.12,
+    "min": 0,
+    "max": 1
+  },
+  
+  "font_case": {
+    "group": "Typography ⌨️",
+    "label": "Title Font Case",
+    "value": "none",
+    "type": "dropdown",
+    "options": {
+      "uppercase": "Uppercase",
+      "lowercase": "Lowercase",
+      "capitalize": "Capitalize",
+      "none": "None"
+    }
+  },
+  
+"sub_font_name": {
+    "group": "Typography ⌨️",
+    "type": "googleFont",
+    "label": "Goal Number Font",
+    "value": "Quicksand"
+  },
+  
+  "sub_font_size": {
+    "group": "Typography ⌨️",
+    "type": "number",
+    "label": "Number Font Size",
+    "value": 20,
+    "min": 20,
+    "max": 40,
+    "step": 1
+  },
+  
+  "sub_font_weight": {
+    "group": "Typography ⌨️",
+    "label": "Number Font Weight",
+    "value": "700",
+    "type": "dropdown",
+    "options": {
+      "300": "Thin",
+      "400": "Regular",
+      "500": "Medium",
+      "600": "Semibold",
+      "700": "Bold"
+    }
+  },
+  
+  "toggleGlow": {
+    "group": "Effects 🩷",
+    "label": "Glow Effects",
+    "type": "dropdown",
+    "value": "0",
+    "options": {
+      "0": "Glow off",
+      "10px": "Glow on"
+    }
+  },
+  
+  "animateIn": {
+    "label": "Widget Reload Animation",
+    "type": "dropdown",
+    "value": "none",
+    "options": {
+      "none": "None",
+      "bounceIn": "Bounce In",
+      "bounceInLeft": "Bounce In Left",
+      "bounceInRight": "Bounce In Right",
+      "bounceInUp": "Bounce In Up",
+      "bounceInDown": "Bounce In Down",
+      "fadeIn": "Fade In",
+      "fadeInUp": "Fade In Up",
+      "fadeInDown": "Fade In Down",
+      "fadeInLeft": "Fade In Left",
+      "fadeInRight": "Fade In Right",
+      "zoomIn": "Zoom In",
+      "zoomInUp": "Zoom In Up",
+      "zoomInDown": "Zoom In Down",
+      "zoomInLeft": "Zoom In Left",
+      "zoomInRight": "Zoom In Right",
+      "rotateInDownLeft": "Rotate In Down Left",
+      "rotateInDownRight": "Rotate In Down Right",
+      "rotateInUpLeft": "Rotate In Up Left",
+      "rotateInUpRight": "Rotate In Up Right"
+    },
+    "group": "Animations 🎉"
+  
+  },
+  
+  "goal_animation": {
+    "group": "Animations 🎉",
+    "label": "Goal Reached Animation",
+    "type": "dropdown",
+    "value": "none",
+    "options": {
+      "none": "None",
+      "goalReachedAnim": "Bounce",
+      "scaleAnim": "Scale"
+    }
+  },
+  
+  "toggleLeaf": {
+    "group": "Effects 🩷",
+    "label": "Show Leaves",
+    "type": "dropdown",
+    "value": "100%",
+    "options": {
+      "100%": "Show",
+      "0%": "Hide"
+    }
+  },
+  
+  "toggleDots": {
+    "group": "Effects 🩷",
+    "label": "Show Title Dots",
+    "type": "dropdown",
+    "value": "100%",
+    "options": {
+      "100%": "Show",
+      "0%": "Hide"
+    }
+  },
+  
+  "widget_color_1": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Widget Color 1",
+    "value": "#f3ebe9"
+  },
+  
+    "widget_color_2": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Widget Color 2",
+    "value": "#f3ebe9"
+  },
+  
+   "glow_color": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Glow Color",
+    "value": "#b1cc65"
+  },
+  
+    "text_color": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Title Color",
+    "value": "#7d9c09"
+  },
+  
+    "number_color": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Numbers Color",
+    "value": "#7d9c09"
+  },
+  
+    "gradient_1": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Progress Color #1",
+    "value": "#b1cc65"
+  },
+  
+    "gradient_2": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Progress Color #2",
+    "value": "#b1cc65"
+  },
+  
+    "progress_background": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Progress Bar Background",
+    "value": "rgba(177, 204, 101, 0.15)"
+  }, 
+  
+  "label_color": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Label Color",
+    "value": "#b1cc65"
+  },
+  
+  "icon_color": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Goal Icon Color",
+    "value": "#63800c"
+  },
+  
+   "flower_icon": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Flower Icon Color",
+    "value": "#b1cc65"
+  },
+  
+    "flower_icon_bg": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Flower Icon Background Color",
+    "value": "#f3ebe9"
+  },
+  
+   "pattern_color": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Bottom Right Pattern Color",
+    "value": "#a6cb40"
+  },
+  
+  "left_leaf_color": {
+   "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Left Leaf Color",
+    "value": "#b1cc65"
+  },
+  
+  "right_leaf_color": {
+    "group": "Colors 🎨",
+    "type": "colorpicker",
+    "label": "Right Leaf Color",
+    "value": "#7d9c09"
+  },
+  
+ "bg_opacity": {
+   	  "group": "Effects 🩷",
+      "type": "slider",
+      "label": "Background Opacity",
+      "value": 100,
+      "min": 0,
+      "max": 100,
+      "step": 20
+    },
+  
+"hover_effect": {
+      "group": "Animations 🎉",
+      "type": "slider",
+      "label": "Floating Amount",
+      "value": 15,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    }
+}
