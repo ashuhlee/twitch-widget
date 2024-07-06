@@ -1,6 +1,7 @@
 # Twitch Goal Widget 🌿
 
 Animated and fully customizable Streamelements goal widget for content creators. This repository is for portfolio purposes only.
+[Purchase here](https://www.etsy.com/ca/listing/1734158921)
 
 > [!NOTE]
 > This is a paid product and is not allowed to be redistributed.
