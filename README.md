@@ -1,4 +1,4 @@
-# Cozy Goal Widget 🌿
+# Twitch Goal Widget 🌿
 
 Animated and fully customizable Streamelements goal widget for content creators
 
