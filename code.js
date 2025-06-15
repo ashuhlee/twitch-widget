@@ -1,4 +1,4 @@
-// Global state object
+// global state object
 let state = {
   "goal": {
     "value": 0,
@@ -6,7 +6,7 @@ let state = {
     "duration": "total"
 
   },
-  "currency": "" // Store currency symbol for donation goal
+  "currency": "" // store currency symbol for donation goal
 };
 
 // Runs code on widget load
@@ -15,9 +15,9 @@ window.addEventListener('onWidgetLoad', async function (obj) {
   let data = obj.detail.session.data;
   let fieldData = obj.detail.fieldData;
   state.goal.value = fieldData.goal_total;
-  state.goal.type = fieldData.goalType; // Get the goal type from field data
+  state.goal.type = fieldData.goalType; // get the goal type from field data
   state.goal.duration = fieldData.data_duration;
-  state.currency = fieldData.curr; // Get the currency symbol from field data
+  state.currency = fieldData.curr; // get the currency symbol from field data
   updateProgress(data);
 
   let isEditor = await SE_API.getOverlayStatus();
@@ -31,7 +31,7 @@ window.addEventListener('onSessionUpdate', function (obj) {
   updateProgress(data);
 });
 
-// Counter animation function
+// counter animation function
 function animateCounter(element, start, end, duration, isDonation, currency) {
   let startTime = null;
 
@@ -52,7 +52,7 @@ function animateCounter(element, start, end, duration, isDonation, currency) {
 }
 
 
-// Progress function
+// progress function
 function updateProgress(data) {
   console.log("Updating progress with data:", data);
   
@@ -88,21 +88,21 @@ if (state.goal.type === "follower") {
   if (count !== undefined) {
     let p = (count / state.goal.value) * maxWidth;
     if (count >= state.goal.value) {
-      p = maxWidth; // Ensure p is set to maxWidth when count reaches goal value
-      goalCount.classList.add('goal-animation'); // Add animation class when count reaches goal value
+      p = maxWidth; // make sure p is set to maxWidth when count reaches goal value
+      goalCount.classList.add('goal-animation'); // add animation class when count reaches goal value
     } else {
-      goalCount.classList.remove('goal-animation'); // Remove animation class when count is not at goal value
+      goalCount.classList.remove('goal-animation'); // remove animation class when count is not at goal value
     }
     console.log("Progress width:", p, "Count:", count);
 
-    // Get the current value displayed
+    // get the current value displayed
     let currentValue = parseInt(goalCount.textContent.replace(state.currency, '')) || 0;
 
-    // Check if the goal type is donation
+    // check if the goal type is donation
     let isDonation = state.goal.type === "donation";
     let currency = state.currency || '';
 
-    // Animate the counter from the current value to the new count
+    // animate the counter from the current value to the new count
     animateCounter(goalCount, currentValue, count, 1000, isDonation, currency); // 1000ms for 1 second animation
 
     fill.style.width = p + 'px';
@@ -112,7 +112,7 @@ if (state.goal.type === "follower") {
   }
 }
 
-// Function to dispatch a custom goal event
+// function to dispatch a custom goal event
 function simulateGoalEvent() {
   const randomCount = Math.floor(Math.random() * state.goal.value);
   let goalKey = `${state.goal.type}-total`;
